@@ -1,0 +1,47 @@
+# <url> sayfasına gidilir.
+* <url> urline gidilir.
+//* "onetrust-accept-btn-handler" selectorlu tipi "id" olan elemente tıkla
+
+# Nereden alanına <text> yazılır ve <text2> seçilir.
+* "OriginInput" selectorlu tipi "id" olan elemente <text> yaz
+* ".airport > span" selectorlu tipi "css" olan elementlerden <text2> değerine eşit olana tıkla
+
+# Nereye alanına <text> yazılır ve <text2> seçilir.
+* "DestinationInput" selectorlu tipi "id" olan elemente <text> yaz
+* ".airport > span" selectorlu tipi "css" olan elementlerden <text2> değerine eşit olana tıkla
+
+# Gidiş tarihi alanından gün <gun> tarih <tarih> olarak seçilir.
+* "DepartureDate" selectorlu tipi "id" olan elemente tıkla
+* Tarih <tarih> olarak seçilir.
+//* ".CalendarMonth[data-visible='true'] .CalendarMonth_caption > strong" selectorlu tipi "css" olan elementlerden <tarih> değerine eşit olan yoksa ".DayPickerNavigation_button[style='display: block;']" selectorlu tipi oka tıkla
+* ".CalendarMonth[data-visible='true'] .CalendarDay:not(.CalendarDay__blocked_out_of_range)" selectorlu tipi "css" olan elementlerden <gun> değerine eşit olana tıkla
+
+# Dönüş tarihi alanından gün <gun> tarih <tarih> olarak seçilir.
+* "ReturnDate" selectorlu tipi "id" olan elemente tıkla
+* Tarih <tarih> olarak seçilir.
+* ".CalendarMonth[data-visible='true'] .CalendarDay:not(.CalendarDay__blocked_out_of_range)" selectorlu tipi "css" olan elementlerden <gun> değerine eşit olana tıkla
+
+# Aktarmasız checkbox işaretlenir.
+* "transitFilter" selectorlu tipi "id" olan elemente tıkla
+
+# Yolcu seçme alanına tıklanır.
+* ".passenger-select-button" selectorlu tipi "css" olan elemente tıkla
+
+# Yolcu alanından <text> sayısı <kez> artırılır.
+* "span[data-testid='passengerTitle']" li tipi "css" olan elementlerden <text> değerine eşit olanın yanındaki "../following-sibling::div/button[contains(@data-testid, 'passengerCountIncrease')]" li tipi "xpath" elemente <kez> tıkla
+
+# Yolcu alanından <text> sayısı <text2> olduğu kontrol edilir.
+* "span[data-testid='passengerTitle']" li tipi "css" olan elementlerden <text> değerine eşit olanın yanındaki "../following-sibling::div/span[@class='PassengerBox__type__count']" li tipi "xpath" elementin texti <text> mi?
+
+# Bilet sınıfı <text> olarak seçilir.
+* ".cabinClassButton > button" selectorlu tipi "css" olan elementlerden <text> değerine eşit olana tıkla
+
+# Tamam butonuna tıklanır.
+* "button[data-testid='okButtonMulti']" selectorlu tipi "css" olan elemente tıkla
+
+# Ucuz Bilet bul butonuna tıklanır.
+* "button[data-testid='formSubmitButton']" selectorlu tipi "css" olan elemente tıkla
+
+# Uçak biletlerinin geldiği kontrol edilir.
+* "lotie-animation" selectorlu tipi "id" olan elementi görünmeyene kadar bekle
+* ".flight-item__wrapper" selectorlu tipi "css" olan element var mı?
